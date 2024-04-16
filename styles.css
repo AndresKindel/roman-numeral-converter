@@ -1,0 +1,111 @@
+:root {
+    --tertiary-color: #AAABB8;
+    --secondary-color: #474787;
+    --main-color: #2C2C54;
+    --text-color: #ECECEC;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-family: 'Rubik';
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 93vh;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.box {
+    background-color: #474787;
+    border: 3px solid var(--tertiary-color);
+    width: 50vh;
+    padding: 20px;
+    font-size: 1.25rem;
+}
+
+#converter h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#input {
+    font-size: 3rem;
+    margin: 10px;
+}
+
+#convert {
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 4px 2px;
+    transition-duration: 0.4s
+}
+
+#convert:hover {
+    background-color: var(--tertiary-color);
+    color: black;
+}
+
+#output {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px;
+    font-size: 3rem;
+}
+
+#result {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* footer */
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+    background-color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--tertiary-color);
+}

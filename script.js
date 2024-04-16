@@ -42,6 +42,9 @@ button.addEventListener('click', () => {
     } else if (inputValue > 3999) {
         result.innerHTML = 'Please enter a number less than or equal to 3999';
         output.style.fontSize = '1.2rem';
+    } else if (inputValue < 1) {
+        result.innerHTML = 'Please enter a number greater than or equal to 1';
+        output.style.fontSize = '1.2rem';
     } else {
         const convertedValue = convertToRoman(inputValue);
         result.innerHTML = convertedValue;
